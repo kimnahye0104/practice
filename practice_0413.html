@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 태그 복습하기 | 0413 토요일 개인연습</title>
+</head>
+<body>
+    <!-- 구조 짜면서, 태그 복습하기 -->
+    <header><!-- header 안에는 메뉴바(gnb 등)가 있고, 로고가 있다. -->
+        <h1>logo</h1>
+        <nav>
+            <a href="#">메뉴1</a>
+            <a href="#">메뉴2</a>
+            <a href="#">메뉴3</a>
+        </nav>
+    </header>
+    <main><!-- main은 header와 footer의 중간, 내용을 담고 있는 커다란 영역 -->
+        <section class="block_tag"><!-- h태그가 첫째 자식으로 오는 경우만 section을 사용해야 좋다. -->
+            <h2>header에서 h1이 사용되었으니, h1,h2만 사용될 수 있다. (h태그는 순차적으로 사용)</h2>
+            <p>
+                단락 태그. 자동줄바꿈이 됨.
+                <b>글자를 두껍게 하는 태그</b>
+                <mark>하이라이트를 해주는 태그</mark>
+                <del>취소선이 보이는 태그(쇼핑몰 가격 세일-기존 가격 등에 많이 쓰인다.)</del><br>
+                줄바꿈태그<br>
+                p태그는 자동 줄바꿈이 되니까
+                p태그와 p태그 사이에는<br>태그를 안써도 됨.
+            </p>
+            <a href="#">
+                href=경로를 꼭 써준다. (상대경로, 절대경로, 바로가기)
+                target="_black"을 쓰면 새창으로 열린다.
+            </a>
+            <a href="#list_tag">리스트 태그 정리된 영역으로 가기</a>
+        </section>
+        <div class="inline_tag">
+            <img src="#" alt="이미지의 alt 대체 텍스트는 웹 접근성을 충분히 고려해서 이해하기 쉽도록 작성하도록 연습해야 한다.">
+            <em>강조, 경고할 때 쓰는 태그</em>
+            <strong>강조할 때 쓰는 태그</strong>
+            <span>인라인 태그 중 많이 쓰는 태그.em과 strong과 다르게 txt에 '강조할' 의미가 없거나 그저 디자인적 요소를 위해 글자에 태그를 입힐 때 쓴다.</span>
+        </div>
+        <ol id="list_tag"><!-- 바로가기의 최종 도달 목적지는 id로 작성해주고, a태그(바로가기링크를 품은 a)에는 #목적지 아이디명 을 입력한다. -->
+            <li>비순차 목록 태그 : ul</li>
+            <li>순차 목록 태그 : ol</li>
+        </ol>
+        <dl>
+            <dt>정의형 목록 태그 : dl 이고, dt는 제목</dt>
+            <dd>내용 작성 태그, dl의 자식, dt와 형제</dd>
+        </dl>
+    </main>
+</body>
+</html>

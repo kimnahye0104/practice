@@ -1,0 +1,47 @@
+/* two some place page 1 css */
+/* css 작성 시작 오후 6:25분 */
+/* css 아예 새로 다시 작성 시작 : 9:12 */
+body {font-family: "Noto Sans KR", sans-serif;}
+header {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+header > h1 {
+    display: inline-block;
+}
+header .gnb,
+header .side,
+header .side .memu_See {
+    display: inline-block;
+    line-height: 20px;
+}
+header h1 {margin:0 165px 0 0;}
+header .gnb {}
+header .gnb > a {
+    font-size: 0.875rem;
+    letter-spacing: -0.4px;
+    margin-left: 44px; font-weight: 700;
+    line-height: 34px;
+} 
+header .gnb a:nth-child(1) {margin-left: 0;}
+header .side {
+    margin-left: 165px;
+    height: 30px;
+}
+header .side .langbox {
+    font-size: 0.875rem;
+    letter-spacing: -0.4px;
+    padding: 5px 24px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    display: inline-block;
+    line-height: 20px;
+}
+header .side .memu_See img {
+    display: inline-block;
+    width: 23px; height: 23px;
+    line-height: 20px;
+    margin-left: 20px;
+}

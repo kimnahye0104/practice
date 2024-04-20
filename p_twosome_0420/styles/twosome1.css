@@ -45,3 +45,57 @@ header .side .memu_See img {
     line-height: 20px;
     margin-left: 20px;
 }
+/* main 영역 시작 */
+main {
+    width: 1440px;
+    margin: 0 auto;
+}
+main .text_wrap {
+    display: inline-block;
+
+}
+main .text_wrap .main_tit h2 {
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 5.625rem;
+    font-weight: 900;
+    letter-spacing: -0.4px;
+}
+main .text_wrap .main_tit .txt_side_box {
+    display: inline-block;
+    width: 20px; height: 20px;
+    background-color: #D9194B;
+    margin-left: 20px;
+}
+main .text_wrap p.txt_top {
+    margin-top: 90px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+main p:nth-child(3),
+main p:nth-child(4),
+main p:nth-child(5) {
+    margin-top: 76px;
+    font-size: 1.875rem;
+    font-weight: 900;
+    
+}
+main p:nth-child(3) {margin-top: 0;}
+main .img_wrap {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    background-color: pink;
+
+}
+main .img_wrap .img_1,
+main .img_wrap .img_2,
+main .img_wrap .img_3 {
+    display: inline-block;
+    width: 100px;
+}
+main .img_wrap .img_2,
+main .img_wrap .img_3 {
+    margin-left: 300px;
+}

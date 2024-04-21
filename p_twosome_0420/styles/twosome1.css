@@ -1,11 +1,19 @@
 /* two some place page 1 css */
 /* css 작성 시작 오후 6:25분 */
 /* css 아예 새로 다시 작성 시작 : 9:12 */
-body {font-family: "Noto Sans KR", sans-serif;}
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
 header {
     width: 1440px;
     margin: 0 auto;
     padding-top: 30px;
+    padding-bottom: 30px;
+    /* position: fixed;
+    z-index: 999;
+    width: 100%;
+    text-align: center; */
+    /* box-shadow: 0 0 6px rgba(0,0,0,0.2); */
 }
 header > h1 {
     display: inline-block;
@@ -25,6 +33,11 @@ header .gnb > a {
     line-height: 34px;
 } 
 header .gnb a:nth-child(1) {margin-left: 0;}
+header .gnb > a:hover {
+    color: #D9194B;
+    text-decoration:  underline;
+}
+
 header .side {
     margin-left: 165px;
     height: 30px;
@@ -38,6 +51,26 @@ header .side .langbox {
     background-color: #fff;
     display: inline-block;
     line-height: 20px;
+    position: relative;
+    z-index: 2;
+}
+header .side .langbox:hover {
+    background-color: #D9194B;
+    color: #fff;
+    border: 1px solid #fff;
+}
+header .langbox_korean {
+    display: inline-block;
+    font-size: 0.875rem;
+    letter-spacing: -0.4px;
+    position: absolute;
+    top: 58px;
+    right: 125px;
+    background-color: #D9194B;
+    color: #fff;
+    padding: 12px 24px;
+    z-index: 1;
+    opacity: 0;
 }
 header .side .memu_See img {
     display: inline-block;
@@ -45,18 +78,25 @@ header .side .memu_See img {
     line-height: 20px;
     margin-left: 20px;
 }
+.header_line {
+    width: 100%;
+    border: 1px solid #eee;
+}
 /* main 영역 시작 */
 main {
     width: 1440px;
     margin: 0 auto;
+    padding-top: 10px;
 }
 main .text_wrap {
     display: inline-block;
-
+    position: absolute;
+    z-index: 2;
+    margin-left: 150px;
 }
 main .text_wrap .main_tit h2 {
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 10px;
     font-size: 5.625rem;
     font-weight: 900;
     letter-spacing: -0.4px;
@@ -73,29 +113,153 @@ main .text_wrap p.txt_top {
     font-weight: 700;
     letter-spacing: -0.4px;
 }
-main p:nth-child(3),
-main p:nth-child(4),
-main p:nth-child(5) {
+main .text_wrap p:nth-child(3),
+main .text_wrap p:nth-child(4),
+main .text_wrap p:nth-child(5) {
     margin-top: 76px;
     font-size: 1.875rem;
     font-weight: 900;
-    
+    color: #aaa;  
 }
-main p:nth-child(3) {margin-top: 0;}
+main .text_wrap > p:nth-child(3) {
+    margin-top: 0;
+    text-decoration: underline;
+    color: #000;
+}
 main .img_wrap {
-    width: 100%;
+    margin-top: 60px;
     display: inline-block;
-    text-align: right;
-    background-color: pink;
-
+    position: absolute;
+    z-index: 1;
+    width: 100%;
 }
 main .img_wrap .img_1,
 main .img_wrap .img_2,
 main .img_wrap .img_3 {
     display: inline-block;
-    width: 100px;
 }
-main .img_wrap .img_2,
-main .img_wrap .img_3 {
-    margin-left: 300px;
+main .img_wrap .img_1 {
+    width: 460px;
+    margin-left: 667px;
+}
+main .img_wrap .img_1 img {
+    width: 460px; height: 460px;
+    overflow: hidden;
+    /* position: relative; */
+}
+main .img_wrap .img_2 img,
+main .img_wrap .img_3 img {
+    display: inline-block;
+    width: 160px; height: 160px;
+    margin-left: 30px;
+    position: absolute;
+    top: 300px;
+}
+main .img_wrap .img_3 img {
+    position: absolute;
+    margin-left: 217px;
+
+}
+body > a.gotop_btn {
+    text-align: center;
+    width: 60px; height: 60px;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 60px;
+    padding-top: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+}
+main .img_wrap_next {
+    width: 390px; height: 50px;
+    margin-left: 700px;
+    margin-top: 494px;
+    position:absolute;
+    z-index: 5;
+}
+main .img_wrap_next > p:nth-child(1) {
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    background-color: #000;
+}
+main .img_wrap_next a.front_btn {
+    position: absolute;
+    display: inline-block;
+    margin-left: 355px;
+    /* background-color: aqua; */
+    margin-top: 15px;
+}
+main .img_wrap_next a.back_btn {
+    position: absolute;
+    /* background-color: aqua; */
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+body > p {
+    margin-top: 1000px;
+}
+.page_num {
+    position: absolute;
+    z-index: 999;
+    margin-left: 1200px;
+    margin-top: 200px;
+    right: 60px;
+    bottom: 300px;
+}
+.page_num > p span {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    margin-left: 210px;
+}
+.page_num .line {
+    margin-left: 220px;
+    margin-top: 12px;
+}
+body > a.brand,
+body > a.together {
+    font-size: 1.125rem;
+    font-weight: 800;
+    background-color: #D9194B;
+    padding: 24px 20px;
+    border-radius: 50px;
+    color: #fff;
+    bottom: 200px;
+}
+body > a.brand:hover,
+body > a.together:hover {
+    background-color: #000;
+}
+body > .brand {
+    position: absolute;
+    z-index: 999;
+    right: 30px;
+    bottom: 100px;
+}
+body > a.together {
+    margin-top: 200px;
+    position: absolute;
+    z-index: 999;
+    right: 30px;
+    bottom: 100px;
+}
+body > a.brand img,
+body > a.together img {
+    margin-left: 10px;
+}
+body > p.made_by {
+    display: inline-block;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    color: blue;
+    margin-top: 5px;
+    margin-left: 5px;
 }

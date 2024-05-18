@@ -1,0 +1,61 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+main {}
+main section {
+    width: 1250px;  margin: 0 auto;
+    background-color: beige;
+}
+main section h1 {margin-bottom: 20px;}
+main section .popup {
+    background-color: lightgray;
+}
+main section .popup .top {
+    display: flex; flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 16px;
+}
+main section .popup .top p:first-child {}
+main section .popup .top p:last-child {}
+main section .popup .btm {}
+main section .popup .btm .img_area {
+    display: flex; flex-flow: row nowrap;
+    width: 100%; padding: 16px 16px;
+    justify-content: space-between;
+}
+/* imgarea 공통 선택자 */
+main section .popup .btm .img_area .img1,
+main section .popup .btm .img_area .img2,
+main section .popup .btm .img_area .img3 {
+    width: calc((100% / 3) - 20px); height: 100px;
+    background-color: lightgreen;
+    border: 1px solid #000;
+}
+/* animation */
+main .ani {
+    width: 1000px; height: 1000px;
+    margin: 0 auto;
+    background-color: pink;
+    position: relative;
+}
+main .ani .box {
+    width: 100px; height: 100px;
+    border: 1px solid #fff;
+}
+main .ani .box1 {
+    background-color: #000;
+    position: absolute;
+    top: 0; left: 0;
+    animation: box1 2s linear infinite;
+}
+main .ani .box2 {
+    background-color: #aaa;
+    top: 0;
+}
+main .ani .box3 {
+    background-color: #444;
+}
+/* @keyframes box1 {
+    0% {left: 0px;}
+    50% {left: 500px; top:200px;}
+    100% {left: 900px;}
+} */
